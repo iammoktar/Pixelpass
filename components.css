@@ -1,0 +1,30 @@
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:11px 20px;border-radius:var(--r-s);border:1.5px solid transparent;font:600 .95rem var(--font);cursor:pointer;text-decoration:none;transition:background .15s,border-color .15s}
+.btn:hover{text-decoration:none}
+.btn-primary{background:var(--blue);color:#fff}.btn-primary:hover{background:var(--blue-d)}
+.btn-ghost{background:#fff;color:var(--blue);border-color:#bfdbfe}.btn-ghost:hover{background:var(--blue-l)}
+.btn-sm{padding:8px 14px;font-size:.88rem}
+
+.site-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:14px;min-height:60px;position:relative}
+.brand{display:flex;align-items:center;gap:9px;color:var(--ink);font-weight:800;font-size:1.05rem;text-decoration:none}
+.brand:hover{text-decoration:none}.brand svg{width:30px;height:30px}
+.nav{display:flex;align-items:center;gap:4px;margin-left:auto}
+.nav a.link{color:var(--mut);font-weight:600;font-size:.93rem;padding:8px 11px;border-radius:var(--r-s)}
+.nav a.link:hover,.nav a.link[aria-current="page"]{color:var(--blue);background:var(--blue-l);text-decoration:none}
+.lang{border:1.5px solid var(--line);border-radius:var(--r-s);padding:7px 8px;font:600 .88rem var(--font);color:var(--ink);background:#fff;margin:0 6px}
+.menu-btn{display:none;margin-left:auto;background:#fff;border:1.5px solid var(--line);border-radius:var(--r-s);padding:8px 10px;cursor:pointer;color:var(--ink)}
+.menu-btn svg{width:20px;height:20px}
+
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--sh)}
+.chip{display:inline-flex;align-items:center;gap:6px;font-size:.82rem;font-weight:600;color:var(--green);background:var(--green-l);border:1px solid #bbf7d0;padding:4px 10px;border-radius:999px}
+
+.site-footer{border-top:1px solid var(--line);background:var(--bg-soft);padding:26px 0;color:var(--mut);font-size:.9rem}
+.foot{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;justify-content:space-between}
+.foot nav{display:flex;flex-wrap:wrap;gap:6px 18px}.foot a{color:var(--mut);font-weight:600}
+
+@media (max-width:760px){
+  .menu-btn{display:inline-flex}
+  .nav{display:none;position:absolute;left:-18px;right:-18px;top:60px;background:#fff;border-bottom:1px solid var(--line);padding:10px 18px 16px;flex-direction:column;align-items:stretch;gap:2px;box-shadow:var(--sh)}
+  .nav.open{display:flex}
+  .nav a.link{padding:12px}.lang{margin:6px 0;padding:10px}.nav .btn{margin-top:6px}
+}

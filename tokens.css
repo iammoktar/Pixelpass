@@ -1,0 +1,10 @@
+/* PixelPass Studio - design tokens */
+:root{
+  --bg:#ffffff;--bg-soft:#f4f6f9;--ink:#0f172a;--mut:#475569;--line:#e2e8f0;
+  --blue:#2563eb;--blue-d:#1d4ed8;--blue-l:#eff6ff;
+  --green:#15803d;--green-l:#f0fdf4;
+  --r:12px;--r-s:8px;
+  --sh:0 1px 2px rgba(15,23,42,.06),0 6px 18px rgba(15,23,42,.06);
+  --max:1080px;
+  --font:"Segoe UI",system-ui,-apple-system,"Helvetica Neue",Arial,"Noto Sans Bengali",sans-serif;
+}
